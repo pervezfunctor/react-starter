@@ -42,6 +42,8 @@
     "lint:fix": "yarn lint --fix",
     "validate:types": "tsc --noEmit -p tsconfig.commit.json",
     "validate": "yarn lint && yarn validate:types && yarn test:single",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "all": "yarn validate && yarn start",
     "eject": "react-scripts eject"
   },
@@ -69,5 +71,9 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "react-docgen-typescript": "^1.12.3",
+    "react-styleguidist": "^8.0.6"
+  }
 }
