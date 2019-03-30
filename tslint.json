@@ -18,22 +18,7 @@
     "jsx-no-string-ref": true,
     "jsx-key": true,
     "label-position": true,
-    "member-ordering": [
-      true,
-      {
-        "order": [
-          "public-static-field",
-          "public-instance-field",
-          "public-constructor",
-          "public-instance-method",
-          "protected-instance-method",
-          "private-instance-method",
-          "private-static-field",
-          "private-instance-field",
-          "private-constructor"
-        ]
-      }
-    ],
+    "member-ordering": false,
     "no-default-export": true,
     "no-any": false,
     "no-arg": true,
@@ -77,22 +62,15 @@
     "no-invalid-this": true,
     "no-parameter-reassignment": true,
     "ban-comma-operator": true,
-    "readonly-keyword": [true, "ignore-local", { "ignore-prefix": "mutable" }],
+    "readonly-keyword": [true, "ignore-local", { "ignore-prefix": "draft" }],
     "readonly-array": [
       true,
       "ignore-local",
       { "ignore-rest-parameters": true }
     ],
-    "no-array-mutation": [
-      true,
-      "ignore-mutation-following-accessor",
-      { "ignore-prefix": "draft" }
-    ],
-    "no-object-mutation": [true, { "ignore-prefix": "draft" }],
     "no-delete": true,
     "no-misused-new": true,
     "interface-over-type-literal": true,
-    "array-type": [true, "array-simple"],
     "no-inferred-empty-object-type": true,
     "no-dynamic-delete": true,
     "no-duplicate-super": true,
@@ -104,7 +82,6 @@
     "prefer-switch": true,
     "prefer-while": true,
     "number-literal-format": true,
-    "no-loop-statement": true,
     "promise-function-async": true,
     "await-promise": true,
     "no-return-await": true,
@@ -113,7 +90,6 @@
     "prefer-method-signature": true,
     "return-undefined": true,
     "use-default-type-parameter": true,
-    "import-blacklist": [true, "rxjs"],
     "no-boolean-literal-compare": true,
     "no-floating-promises": true,
     "no-invalid-template-strings": true,
