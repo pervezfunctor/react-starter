@@ -120,5 +120,5 @@
     "readonly-array": [true, "ignore-local", { "ignore-rest-parameters": true }]
   },
 
-  "defaultSeverity": "warn"
+  "defaultSeverity": "error"
 }
