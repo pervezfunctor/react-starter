@@ -19,6 +19,7 @@
     "io-ts-types": "0.5.0",
     "lint-staged": "9.2.0",
     "monocle-ts": "^2.0.0",
+    "parcel-bundler": "^1.12.3",
     "prettier": "1.18.2",
     "react": "16.8.6",
     "react-docgen-typescript": "1.12.5",
@@ -40,6 +41,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "pstart": "parcel index.html --open",
+    "pbuild": "parcel build index.html",
     "test": "react-scripts test",
     "destroy": "git clean -dfx",
     "up": "lerna exec -- ncu -u",
