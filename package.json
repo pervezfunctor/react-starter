@@ -45,13 +45,14 @@
     "pbuild": "parcel build index.html",
     "test": "react-scripts test",
     "destroy": "git clean -dfx",
-    "up": "lerna exec -- ncu -u",
+    "up": "ncu -u",
     "test:single": "CI=true react-scripts test",
     "lint": "yarn tslint -p . -c tslint.json 'src/**/*.tsx' 'src/**/*.ts'",
     "lint:fix": "yarn lint --fix",
     "types": "tsc --noEmit -p .",
     "types:watch": "yarn types --watch",
-    "validate": "yarn lint && yarn types && yarn test:single",
+    "validate:noFix": "yarn lint && yarn types && yarn test:single",
+    "validate": "yarn lint:fix && yarn types && yarn test:single",
     "sg": "styleguidist server",
     "sg:build": "styleguidist build",
     "all": "yarn validate && yarn start",
@@ -62,8 +63,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn validate",
+      "pre-commit": "yarn lint-staged",
+      "pre-push": "yarn validate:noFix",
       "pre-build": "yarn validate"
     }
   },
