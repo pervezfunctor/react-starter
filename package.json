@@ -5,8 +5,8 @@
   "dependencies": {
     "@testing-library/jest-dom": "4.2.4",
     "@testing-library/react": "9.4.0",
-    "@types/jest": "24.0.24",
-    "@types/node": "12.12.21",
+    "@types/jest": "24.0.25",
+    "@types/node": "13.1.1",
     "@types/react": "16.9.17",
     "@types/react-dom": "16.9.4",
     "@types/yup": "0.26.27",
@@ -34,7 +34,7 @@
     "tslint-config-prettier": "1.18.0",
     "tslint-immutable": "6.0.1",
     "tslint-react": "4.1.0",
-    "typescript": "3.7.3",
+    "typescript": "3.7.4",
     "typescript-tslint-plugin": "0.5.5",
     "yup": "0.28.0"
   },
